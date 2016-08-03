@@ -36,4 +36,4 @@ RUN \
 
 EXPOSE 9000
 
-ENTRYPOINT ["php-fpm", "-F"]
+ENTRYPOINT ["php-fpm", "--nodaemonize", "--allow-to-run-as-root"]
