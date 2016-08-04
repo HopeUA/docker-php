@@ -15,6 +15,7 @@ RUN \
         php5-fpm \
         php5-mysqli \
         php5-xml \
+        php5-json \
         php5-pdo \
         php5-gd \
         php5-opcache \
@@ -26,8 +27,6 @@ RUN \
     sed -i -e "s/listen = 127.0.0.1:9000/listen = 0.0.0.0:9000/g" ${FPM_CONFIG} && \
     sed -i -e "s/user = nobody/user = root/g" ${FPM_CONFIG} && \
     sed -i -e "s/group = nobody/group = root/g" ${FPM_CONFIG} && \
-    sed -i -e "s/;catch_workers_output = yes/catch_workers_output = yes/g" ${FPM_CONFIG} && \
-    sed -i -e "s/error_log = \/var\/log\/php-fpm.log/;error_log = \/var\/log\/php-fpm.log/g" ${FPM_CONFIG} && \
 
     sed -i -e "s/date.timezone = UTC/date.timezon = Europe\/Kiev/g" ${PHP_CONFIG} && \
     sed -i -e "s/upload_max_filesize = 2M/upload_max_filesize = 100M/g" ${PHP_CONFIG} && \
