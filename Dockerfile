@@ -21,6 +21,7 @@ RUN \
         php5-opcache \
         php5-iconv \
         php5-curl \
+        php5-ctype \
         php5-pcntl && \
 
     # Configure
