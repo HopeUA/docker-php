@@ -22,6 +22,7 @@ RUN \
         php5-iconv \
         php5-curl \
         php5-ctype \
+        php5-zlib \
         php5-pcntl && \
 
     # Configure
