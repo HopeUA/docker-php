@@ -30,7 +30,7 @@ RUN \
     sed -i -e "s/user = nobody/user = root/g" ${FPM_CONFIG} && \
     sed -i -e "s/group = nobody/group = root/g" ${FPM_CONFIG} && \
 
-    sed -i -e "s/date.timezone = UTC/date.timezon = Europe\/Kiev/g" ${PHP_CONFIG} && \
+    sed -i -e "s/date.timezone = UTC/date.timezone = Europe\/Kiev/g" ${PHP_CONFIG} && \
     sed -i -e "s/upload_max_filesize = 2M/upload_max_filesize = 100M/g" ${PHP_CONFIG} && \
     sed -i -e "s/post_max_size = 8M/post_max_size = 100M/g" ${PHP_CONFIG} && \
 
