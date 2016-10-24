@@ -3,7 +3,7 @@ FROM hope/base-alpine:3.4
 MAINTAINER Sergey Sadovoi <sergey@hope.ua>
 
 ENV \
-    PHP_VERSION=5.6.24 \
+    PHP_VERSION=5.6.26 \
     PHP_CONFIG=/etc/php5/php.ini \
     FPM_CONFIG=/etc/php5/php-fpm.conf
 
@@ -18,6 +18,7 @@ RUN \
         php5-json \
         php5-pdo \
         php5-gd \
+        php5-imagick \
         php5-opcache \
         php5-iconv \
         php5-curl \
