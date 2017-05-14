@@ -25,6 +25,7 @@ RUN \
         php7-zlib@edge \
         php7-openssl@edge \
         php7-session@edge \
+        php7-tokenizer@edge \
         php7-pcntl@edge && \
 
     # Configure
