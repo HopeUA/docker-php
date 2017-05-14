@@ -1,29 +1,30 @@
 FROM hope/base-alpine:3.5
 
 ENV \
-    PHP_VERSION=7.0.16 \
+    PHP_VERSION=7.1.5 \
     PHP_CONFIG=/etc/php7/php.ini \
     FPM_CONFIG=/etc/php7/php-fpm.d/www.conf
 
 RUN \
     # Install
     apk add --no-cache \
-        php7 \
-        php7-fpm \
+        php7@edge \
+        php7-fpm@edge \
         php7-mongodb@edge \
-        php7-pdo \
-        php7-mysqlnd \
-        php7-mysqli \
-        php7-xml \
-        php7-dom \
-        php7-json \
-        php7-gd \
-        php7-opcache \
-        php7-iconv \
-        php7-curl \
-        php7-ctype \
-        php7-zlib \
-        php7-pcntl && \
+        php7-pdo@edge \
+        php7-mysqlnd@edge \
+        php7-mysqli@edge \
+        php7-xml@edge \
+        php7-dom@edge \
+        php7-json@edge \
+        php7-gd@edge \
+        php7-opcache@edge \
+        php7-iconv@edge \
+        php7-curl@edge \
+        php7-ctype@edge \
+        php7-zlib@edge \
+        php7-openssl@edge \
+        php7-pcntl@edge && \
 
     # Configure
     sed -i -e "s/listen = 127.0.0.1:9000/listen = 0.0.0.0:9000/g" ${FPM_CONFIG} && \
