@@ -10,6 +10,7 @@ RUN \
     apk add --no-cache \
         php7 \
         php7-fpm \
+        php7-mongodb@edge \
         php7-pdo \
         php7-mysqlnd \
         php7-mysqli \
