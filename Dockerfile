@@ -24,6 +24,7 @@ RUN \
         php7-ctype@edge \
         php7-zlib@edge \
         php7-openssl@edge \
+        php7-session@edge \
         php7-pcntl@edge && \
 
     # Configure
