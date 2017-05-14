@@ -15,6 +15,7 @@ RUN \
         php7-mysqlnd \
         php7-mysqli \
         php7-xml \
+        php7-dom \
         php7-json \
         php7-gd \
         php7-opcache \
