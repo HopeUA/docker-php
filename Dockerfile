@@ -16,6 +16,7 @@ RUN \
         php7-mysqli@edge \
         php7-xml@edge \
         php7-dom@edge \
+        php7-simplexml@edge \
         php7-json@edge \
         php7-gd@edge \
         php7-opcache@edge \
