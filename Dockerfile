@@ -20,6 +20,7 @@ RUN \
         php7-gd@edge \
         php7-opcache@edge \
         php7-iconv@edge \
+        php7-mbstring@edge \
         php7-curl@edge \
         php7-ctype@edge \
         php7-zlib@edge \
