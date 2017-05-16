@@ -29,6 +29,7 @@ RUN \
         php7-session@edge \
         php7-tokenizer@edge \
         php7-phar@edge \
+        php7-posix@edge \
         php7-pcntl@edge && \
 
     # Configure
